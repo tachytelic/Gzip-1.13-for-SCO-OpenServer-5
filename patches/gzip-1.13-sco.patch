@@ -1,0 +1,22 @@
+--- a/lib/unistd.in.h	2026-11-20 23:35:34.281427448 +0000
++++ b/lib/unistd.in.h	2026-11-20 23:35:34.677421807 +0000
+@@ -1299,7 +1299,7 @@
+                                     _GL_ARG_NONNULL ((1)));
+ _GL_CXXALIAS_RPL (gethostname, int, (char *name, size_t len));
+ # else
+-#  if !@HAVE_GETHOSTNAME@
++#  if 0  /* SCO patch */
+ _GL_FUNCDECL_SYS (gethostname, int, (char *name, size_t len)
+                                     _GL_ARG_NONNULL ((1)));
+ #  endif
+--- a/lib/getprogname.c	2026-11-20 23:35:34.220428317 +0000
++++ b/lib/getprogname.c	2026-11-20 23:35:34.677421807 +0000
+@@ -298,7 +298,7 @@
+     }
+   return "?";
+ # else
+-#  error "getprogname module not ported to this OS"
++  return "?";
+ # endif
+ }
+ 

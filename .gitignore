@@ -1,0 +1,8 @@
+work/
+gzip-1.13/
+gzip-1.13.tar.gz
+install/
+prebuilt/
+*.swp
+*~
+.DS_Store
