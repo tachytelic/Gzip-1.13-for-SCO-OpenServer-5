@@ -202,4 +202,3 @@ applied. The patch and build script are released under MIT.
 - [SCO Expert](https://scoexpert.com/): support for SCO OpenServer
   systems, with guides, a knowledge base and a mirror of SCO's own
   downloads.
-- [tachytelic.net](https://tachytelic.net/): my technical blog.
